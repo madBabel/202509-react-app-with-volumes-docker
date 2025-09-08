@@ -13,3 +13,9 @@ ENV WATCHPACK_POLLING=true
 
 COPY . .
 CMD ["npm", "start"]
+
+# docker run \
+#  --rm -d -p 3000:3000 \
+#  -v ./public:/app/public \
+#  -v ./src:/app/src \
+#  react-app:dev
